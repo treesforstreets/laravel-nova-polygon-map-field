@@ -1,6 +1,6 @@
 {
-    "name": "moathdev/laravel-nova-polygon-map-field",
-    "description": "Laravel Nova Polygon map field.",
+    "name": "treesforstreets/laravel-nova-polygon-map-field",
+    "description": "TfS Laravel Nova Polygon map field.",
     "keywords": [
         "laravel",
         "nova",
@@ -10,7 +10,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.1.0",
-        "grimzy/laravel-mysql-spatial": "^4.0"
+        "grimzy/laravel-mysql-spatial": "^2.0"
     },
     "autoload": {
         "psr-4": {
