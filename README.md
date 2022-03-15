@@ -4,7 +4,7 @@
 Use composer to install the package.
 
 ```shell
-composer require moathdev/laravel-nova-Polygon-map-field
+composer require treesforstreets/laravel-nova-Polygon-map-field
 ```
 
 
