@@ -5,7 +5,7 @@
         :center="center"
         :zoom="5"
         ref="map"
-        style="width: 800px; height: 500px"
+        style="width: 100%; height: 640px"
       >
         <gmap-polygon
           :draggable="true"
@@ -47,6 +47,7 @@
       setInitialValue() {
         this.$gmapApiPromiseLazy()
           .then(() => {
+
             const polygon = (new Wkt.Wkt()).fromJson(this.field.value).toObject();
 
             this.updateValue(polygon.getPaths());

@@ -3,7 +3,7 @@ import * as VueGoogleMaps from "vue2-google-maps";
 Nova.booting((Vue, router, store) => {
   Vue.use(VueGoogleMaps, {
     load: {
-      key: Nova.config.googleMapsKey,
+      key: Nova.config.googleMapsApiKey,
       libraries: "drawing,geometry",
     },
   });

@@ -15,7 +15,10 @@
   let self = this;
 
   export default {
-    props: ["resource", "field"],
+    props: [
+			"resource",
+	    "field"
+    ],
 
     data() {
       return {
@@ -29,19 +32,13 @@
 
       this.$gmapApiPromiseLazy().then(() => {
           const polygon = (new Wkt.Wkt()).fromJson(this.field.value).toObject();
-
-          console.log(polygon.getPaths());
-
           this.paths = polygon.getPaths();
-
           const bounds = new google.maps.LatLngBounds();
-
           for (let path of this.paths.getArray()) {
             for (let point of path.getArray()) {
               bounds.extend(point);
             }
           }
-
           mapRef.fitBounds(bounds);
         },
       );
